@@ -313,7 +313,7 @@ local function GetAnimationFunctions(IsSecondTry)
 		GarbageAnimate.Disabled = true 
 	end
 	coroutine.wrap(function()
-		runobj("animate")
+		load("animate.lua")
 	end)()
 	repeat task.wait() until _G.RunFunction and _G.ClimbFunction
 	RunFunction = _G.RunFunction 
@@ -579,7 +579,7 @@ end
 assert(UpdateZoom, "Could not find zoom updating function")
 
 -- UI Initilializing
-local Library = runobj("ui")
+local Library = load("ui.lua")
 local MainWindow = Library:CreateWindow("Replayability")
 MainWindow:Bind("Hide Gui", { -- Main Section
 	flag = "ToggleUI",
