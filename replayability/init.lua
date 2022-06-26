@@ -1,6 +1,6 @@
 local load = function(asset)
 	local fl = "replayability"
-	return loadstring(game:HttpGetAsync(string.format("https://raw.githubusercontent.com/lucien-ml/load/main/%s/load/%s", sl, asset)))()
+	return loadstring(game:HttpGetAsync(string.format("https://raw.githubusercontent.com/lucien-ml/load/main/%s/load/%s", fl, asset)))()
 end
 
 -- Settings
